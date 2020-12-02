@@ -107,6 +107,8 @@ defmodule GlificWeb.Router do
 
   scope "/webhook", GlificWeb.Flows do
     post "/stir/survey", WebhookController, :stir_survey
+    get "/get_survay", WebhookController, :get_survey
+    post "/post_survay", WebhookController, :post_survey
   end
 
   # defp debug_response(conn, _) do
